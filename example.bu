@@ -25,3 +25,9 @@ storage:
           dns-search=
           may-fail=false
           method=manual
+    - path: /etc/zincati/config.d/90-disable-auto-updates.toml
+      mode: 0644
+      contents:
+        inline: |
+          [updates]
+          enabled = false
